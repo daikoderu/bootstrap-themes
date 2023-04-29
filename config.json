@@ -1,0 +1,49 @@
+{
+    "themeColors": [
+        "blue",
+        "indigo",
+        "purple",
+        "pink",
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "teal",
+        "cyan",
+        "gray"
+    ],
+    "tabs": {
+        "accordion": "Accordion",
+        "alerts": "Alerts",
+        "badge": "Badge",
+        "breadcrumb": "Breadcrumb",
+        "buttons": "Buttons",
+        "card": "Cards",
+        "carousel": "Carousel",
+        "colors": "Colors",
+        "forms": "Forms",
+        "listgroup": "List group",
+        "modal": "Modal",
+        "nav-tab": "Navs & Tabs",
+        "progress": "Progress",
+        "spinners": "Spinners",
+        "tables": "Tables",
+        "toasts": "Toasts",
+        "tooltips": "Tooltips",
+        "typography": "Typography"
+    },
+    "themes": {
+        "violet": {
+            "name": "Violet Light",
+            "textInvertOn": ["primary", "success", "danger", "info", "dark"],
+            "isDark": false,
+            "useInvertOnCards": false
+        },
+        "default": {
+            "name": "Bootstrap Default",
+            "textInvertOn": ["primary", "secondary", "success", "danger", "dark"],
+            "isDark": false,
+            "useInvertOnCards": true
+        }
+    }
+}

@@ -1,0 +1,8 @@
+// Import Bootstrap functions first
+@import "node_modules/bootstrap/scss/functions";
+
+@import "../common/basic-colors";
+@import "../colors/default";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/variables-dark";
+@import "../common/colorpreview";

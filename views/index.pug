@@ -1,0 +1,12 @@
+extend basepage.pug
+
+block content
+  .container.my-4
+    h1 Daikoderu's Bootstrap Theme Collection
+    p This is a collection of Bootstrap themes that I made for my personal projects.
+    p All of them are freely available for use in any project.
+    p Here is the list of available themes:
+    .list-group.mb-4
+      each theme, urlName in themeList
+        a.list-group-item.list-group-item-action(href=`/theme/${urlName}`)= theme.name
+    a.btn.btn-primary.btn-large(href="https://github.com/daikoderu/bootstrap-themes") GitHub repository

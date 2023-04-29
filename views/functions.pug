@@ -1,0 +1,60 @@
+-
+  function xor(a, b) {
+    return (a || b) && !(a && b);
+  }
+  function lightOrDark() {
+    if (theme !== undefined && theme.isDark) {
+      return "dark";
+    } else {
+      return "light";
+    }
+  }
+  function invertClass(variant) {
+    if (theme.textInvertOn.includes(variant)) {
+      return theme.isDark ? "text-black" : "text-white"
+    } else {
+      return ""
+    }
+  }
+  function badgeInvertClass(variant) {
+    if (theme.textInvertOn.includes(variant)) {
+      return ""
+    } else {
+      return theme.isDark ? "text-white" : "text-black"
+    }
+  }
+  function cardInvertClass(variant) {
+    if (theme.useInvertOnCards && theme.textInvertOn.includes(variant) ) {
+      return theme.isDark ? "text-black" : "text-white"
+    } else {
+      return "";
+    }
+  }
+  function whiteCloseButtonIfDark() {
+    if (theme.isDark) {
+      return "btn-close-white";
+    } else {
+      return "";
+    }
+  }
+  function whiteCloseButton(variant) {
+    if (xor(theme.textInvertOn.includes(variant), theme.isDark)) {
+      return "btn-close-white";
+    } else {
+      return "";
+    }
+  }
+  function navbarScheme(variant) {
+    if (xor(theme.textInvertOn.includes(variant), theme.isDark)) {
+      return "navbar-dark";
+    } else {
+      return "navbar-light";
+    }
+  }
+  function outlineButtonInBG(variant) {
+    if (xor(theme.textInvertOn.includes(variant), theme.isDark)) {
+      return "btn-outline-light";
+    } else {
+      return "btn-outline-dark";
+    }
+  }
