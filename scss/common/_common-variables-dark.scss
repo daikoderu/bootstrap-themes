@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+// General styles
+// =============================================================================
+
+$body-bg:                 #0e0e0e;
+$body-color:              $gray-100;
+$link-color:              $cyan;
+$link-tint-percentage:    20%;
+$link-hover-color:        tint-color($link-color, $link-tint-percentage);
+$code-color:              $red;
+
+$border-color:            $primary-600;
+
+$box-shadow:              0 .5rem 1rem rgba($border-color, 0.3);
+$box-shadow-sm:           0 .125rem .25rem rgba($border-color, 0.15);
+$box-shadow-lg:           0 1rem 3rem rgba($border-color, 0.35);
+$box-shadow-inset:        inset 0 1px 2px rgba($border-color, 0.15);
+
+$component-active-color:  $white;
+$component-active-bg:     $primary-700;
+
+$font-family-sans-serif: "Space Grotesk", system-ui, -apple-system, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$mark-padding: 0;
+$mark-bg: rgba(255, 238, 0, 0.2);
+
+$hr-color: $primary;
+$hr-opacity: 0.5;
+
+$text-muted: $gray-500;
+$blockquote-footer-color: $text-muted;
+
+$disabled-color: $gray-500;
+
+
+// Accordion
+// =============================================================================
+
+$accordion-button-active-bg:      $primary-900;
+$accordion-border-color:          $border-color;
+$accordion-button-active-color:   $primary-300;
+
+
+// Alerts
+// =============================================================================
+
+$alert-bg-scale:                80%;
+$alert-border-scale:            70%;
+$alert-color-scale:             -40%;
+
+
+// Badge
+// =============================================================================
+
+$badge-color: $black;
+
+
+// Breadcrumb
+// =============================================================================
+
+$breadcrumb-divider-color:      $primary;
+$breadcrumb-active-color:       $text-muted;
+
+
+// Button
+// =============================================================================
+
+$button-colors: (
+  "primary": (
+    "bg": $primary-700,
+    "color": $white,
+    "border": $primary
+  ),
+  "secondary": (
+    "bg": $secondary-700,
+    "color": $white,
+    "border": $secondary
+  ),
+  "success": (
+    "bg": $success-700,
+    "color": $white,
+    "border": $success
+  ),
+  "danger": (
+    "bg": $danger-700,
+    "color": $white,
+    "border": $danger
+  ),
+  "warning": (
+    "bg": $warning-700,
+    "color": $white,
+    "border": $warning
+  ),
+  "info": (
+    "bg": $info-700,
+    "color": $white,
+    "border": $info
+  ),
+  "light": (
+    "bg": $light-700,
+    "color": $black,
+    "border": $light
+  ),
+  "dark": (
+    "bg": $dark-700,
+    "color": $white,
+    "border": $dark
+  ),
+);
+
+$btn-hover-bg-shift-amount:     25%;
+$btn-active-bg-shift-amount:    30%;
+
+
+// Card
+// =============================================================================
+
+$card-colors: (
+  "primary": (
+    "headerbg": $primary-800,
+    "bg": $primary-900,
+    "outline": $primary
+  ),
+  "secondary": (
+    "headerbg": $secondary-800,
+    "bg": $secondary-900,
+    "outline": $secondary
+  ),
+  "success": (
+    "headerbg": $success-800,
+    "bg": $success-900,
+    "outline": $success
+  ),
+  "danger": (
+    "headerbg": $danger-800,
+    "bg": $danger-900,
+    "outline": $danger
+  ),
+  "warning": (
+    "headerbg": $warning-800,
+    "bg": $warning-900,
+    "outline": $warning
+  ),
+  "info": (
+    "headerbg": $info-800,
+    "bg": $info-900,
+    "outline": $info
+  ),
+  "light": (
+    "headerbg": $light-800,
+    "bg": $light-900,
+    "outline": $light
+  ),
+  "dark": (
+    "headerbg": $dark-800,
+    "bg": $dark-900,
+    "outline": $dark
+  ),
+);
+$card-border-color:                         $border-color;
+$card-cap-bg:                               $primary-950;
+$card-bg:                                   $body-bg;
+
+
+// Dropdown
+// =============================================================================
+
+$dropdown-bg:                               $body-bg;
+$dropdown-color:                            $body-color;
+$dropdown-border-color:                     $primary;
+$dropdown-divider-bg:                       $dropdown-border-color;
+$dropdown-link-color:                       $gray-200;
+$dropdown-link-hover-bg:                    $primary-900;
+$dropdown-link-active-bg:                   $primary-800;
+$dropdown-link-active-color:                $component-active-color;
+$dropdown-link-disabled-color:              $disabled-color;
+
+
+// Forms
+// =============================================================================
+
+$input-bg:                                  $body-bg;
+$input-color:                               $body-color;
+$input-disabled-bg:                         $gray-900;
+$input-border-color:                        $border-color;
+$input-placeholder-color:                   $gray-500;
+$input-focus-border-color:                  $primary-600;
+
+$form-text-color:                           $text-muted;
+
+$form-check-input-border:                   1px solid $border-color;
+$form-switch-color:                         $border-color;
+$form-check-input-checked-bg-color:         $primary-700;
+$form-check-input-indeterminate-bg-color:   $primary-700;
+
+$form-range-track-bg:                       $primary-900;
+$form-range-thumb-bg:                       $primary;
+$form-range-thumb-active-bg:                $primary-300;
+$form-range-thumb-disabled-bg:              $gray-700;
+
+$input-group-addon-color:                   $primary-300;
+$input-group-addon-bg:                      $primary-900;
+
+$form-file-button-color:                    $primary-300;
+$form-file-button-bg:                       $primary-900;
+$form-file-button-hover-bg:                 $primary-850;
+
+
+// List groups
+// =============================================================================
+
+$list-group-bg:                             $body-bg;
+$list-group-color:                          $body-color;
+$list-group-border-color:                   $border-color;
+$list-group-hover-bg:                       $primary-850;
+$list-group-disabled-color:                 $disabled-color;
+
+$list-group-action-color:                   $body-color;
+$list-group-action-hover-color:             $list-group-action-color;
+$list-group-action-active-color:            $body-color;
+$list-group-action-active-bg:               $primary-800;
+
+$list-group-colors: (
+  "primary": (
+    "bg": $primary-900,
+    "color": $primary-300,
+    "border": $primary-600,
+  ),
+  "secondary": (
+    "bg": $secondary-900,
+    "color": $secondary-300,
+    "border": $secondary-600,
+  ),
+  "success": (
+    "bg": $success-900,
+    "color": $success-300,
+    "border": $success-600,
+  ),
+  "danger": (
+    "bg": $danger-900,
+    "color": $danger-300,
+    "border": $danger-600,
+  ),
+  "warning": (
+    "bg": $warning-900,
+    "color": $warning-300,
+    "border": $warning-600,
+  ),
+  "info": (
+    "bg": $info-900,
+    "color": $info-300,
+    "border": $info-600,
+  ),
+  "light": (
+    "bg": $light-900,
+    "color": $white,
+    "border": $light-700,
+  ),
+  "dark": (
+    "bg": $dark-900,
+    "color": $white,
+    "border": $dark-700,
+  ),
+);
+
+
+// Modals
+// =============================================================================
+$modal-content-bg:                          $body-bg;
+$modal-content-color:                       $body-color;
+$modal-content-border-color:                $border-color;
+
+
+// Pagination
+// =============================================================================
+
+$pagination-bg:                             $body-bg;
+$pagination-border-color:                   $border-color;
+$pagination-hover-bg:                       $primary-850;
+$pagination-hover-border-color:             $border-color;
+$pagination-focus-bg:                       $pagination-hover-bg;
+$pagination-active-bg:                      $border-color;
+$pagination-disabled-bg:                    $gray-900;
+$pagination-disabled-color:                 $disabled-color;
+$pagination-disabled-border-color:          $border-color;
+
+
+// Navs & Tabs
+// =============================================================================
+
+$nav-tabs-border-color:                     $border-color;
+$nav-tabs-link-hover-border-color:          $border-color;
+$nav-tabs-link-active-bg:                   $body-bg;
+$nav-tabs-link-active-border-color:
+  $border-color $border-color $nav-tabs-link-active-bg;
+$nav-tabs-link-active-color:                $body-color;
+$nav-link-disabled-color:                   $disabled-color;
+
+$navbar-light-bg:                           $gray-200;
+$navbar-dark-bg:                            $gray-900;
+
+
+// Progress
+// =============================================================================
+
+$progress-bg:                               $gray-900;
+
+
+// Popovers
+// =============================================================================
+
+$popover-bg:                                $body-bg;
+$popover-border-color:                      $border-color;
+$popover-header-bg:                         rgba($primary, 10%);
+$popover-body-padding-y:                    .5rem;
+
+
+// Tables
+// =============================================================================
+
+$table-border-color:                        $border-color;
+$table-group-separator-color:               $primary;
+$table-striped-bg:                          rgba($primary, 10%);
+$table-bg-scale:                            80%;
+
+
+// Toasts
+// =============================================================================
+
+$toast-background-color:                    rgba($body-bg, 0.85);
+$toast-border-color:                        $border-color;
+$toast-header-color:                        $body-color;
+$toast-header-background-color:             $primary-900;
+$toast-header-border-color:                 $border-color;
+
+
+// Tooltips
+// =============================================================================
+
+$tooltip-bg: $primary-900;
+$tooltip-color: $body-color;

@@ -1,0 +1,76 @@
+$primary:       $purple;
+$secondary:     $cyan;
+$success:       $green;
+$danger:        $red;
+$warning:       $yellow;
+$info:          $pink;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+
+// Color variations
+// =============================================================================
+
+$primary-300:   tint-color($primary, 60%);
+
+$primary-600:   shade-color($primary, 20%);
+$primary-700:   shade-color($primary, 40%);
+$primary-800:   shade-color($primary, 60%);
+$primary-850:   shade-color($primary, 70%);
+$primary-900:   shade-color($primary, 80%);
+$primary-950:   shade-color($primary, 90%);
+
+$secondary-300:   tint-color($secondary, 60%);
+
+$secondary-600:   shade-color($secondary, 20%);
+$secondary-700:   shade-color($secondary, 40%);
+$secondary-800:   shade-color($secondary, 60%);
+$secondary-850:   shade-color($secondary, 70%);
+$secondary-900:   shade-color($secondary, 80%);
+$secondary-950:   shade-color($secondary, 90%);
+
+$success-300:   tint-color($success, 60%);
+
+$success-600:   shade-color($success, 20%);
+$success-700:   shade-color($success, 40%);
+$success-800:   shade-color($success, 60%);
+$success-850:   shade-color($success, 70%);
+$success-900:   shade-color($success, 80%);
+$success-950:   shade-color($success, 90%);
+
+$danger-300:   tint-color($danger, 60%);
+
+$danger-600:   shade-color($danger, 20%);
+$danger-700:   shade-color($danger, 40%);
+$danger-800:   shade-color($danger, 60%);
+$danger-850:   shade-color($danger, 70%);
+$danger-900:   shade-color($danger, 80%);
+$danger-950:   shade-color($danger, 90%);
+
+$warning-300:   tint-color($warning, 60%);
+
+$warning-600:   shade-color($warning, 20%);
+$warning-700:   shade-color($warning, 40%);
+$warning-800:   shade-color($warning, 60%);
+$warning-850:   shade-color($warning, 70%);
+$warning-900:   shade-color($warning, 80%);
+$warning-950:   shade-color($warning, 90%);
+
+$info-300:   tint-color($info, 60%);
+
+$info-600:   shade-color($info, 20%);
+$info-700:   shade-color($info, 40%);
+$info-800:   shade-color($info, 60%);
+$info-850:   shade-color($info, 70%);
+$info-900:   shade-color($info, 80%);
+$info-950:   shade-color($info, 90%);
+
+$light-700:   shade-color($light, 40%);
+$light-800:   shade-color($light, 60%);
+$light-900:   shade-color($light, 80%);
+
+$dark-700:   shade-color($dark, 40%);
+$dark-800:   shade-color($dark, 60%);
+$dark-900:   shade-color($dark, 80%);
+
+@import "../common/common-variables-dark";

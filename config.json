@@ -33,10 +33,16 @@
         "typography": "Typography"
     },
     "themes": {
-        "violet": {
+        "violet-light": {
             "name": "Violet Light",
-            "textInvertOn": ["primary", "success", "danger", "info", "dark"],
+            "textInvertOn": ["primary", "danger", "info", "dark"],
             "isDark": false,
+            "useInvertOnCards": false
+        },
+        "violet-dark": {
+            "name": "Violet Dark",
+            "textInvertOn": ["secondary", "success", "warning", "danger", "info", "light"],
+            "isDark": true,
             "useInvertOnCards": false
         },
         "default": {

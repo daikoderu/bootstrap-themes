@@ -24,18 +24,3 @@ mixin _navbar()
           each theme, urlName in themeList
             li
               a.dropdown-item(href=`/theme/${urlName}`)= theme.name
-      li.nav-item
-        button#mode-toggle.btn.btn-primary(type="button" onclick="toggleDarkMode()") Light mode
-
-  script.
-    const $body = document.body;
-    const $modeToggleButton = document.getElementById("mode-toggle");
-    function toggleDarkMode() {
-      if ($body.getAttribute("data-bs-theme") === "dark") {
-        $body.setAttribute("data-bs-theme", "");
-        $modeToggleButton.innerText = "Light mode";
-      } else {
-        $body.setAttribute("data-bs-theme", "dark");
-        $modeToggleButton.innerText = "Dark mode";
-      }
-    }
