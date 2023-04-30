@@ -4,6 +4,7 @@
   "description": "A collection of Bootstrap themes for my personal projects.",
   "main": "preview.js",
   "scripts": {
+    "preview": "node preview.js",
     "build": "node build.js"
   },
   "keywords": [
