@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-daikoderu-themes",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A collection of Bootstrap themes for my personal projects.",
   "main": "preview.js",
   "scripts": {
