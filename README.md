@@ -35,6 +35,9 @@ project:
 npm install bootstrap-daikoderu-themes
 ```
 
+The latest supported version of Bootstrap is 5.2. Due to the changes introduced in Bootstrap 5.3
+regarding variables, `bootstrap-daikoderu-themes` does not support Bootstrap 5.3 and later at
+the moment.
 
 ### With React
 
@@ -99,5 +102,5 @@ This way you can create theme families with both common and distinct properties
 while reducing repetition when declaring your variables across variations.
 However, it's up to you how you organize your styles.
 
-Once you've made changes, just call `sass` from your command line to get the
-resulting CSS file.
+Once you've made changes, just call `npm run css-build <theme-name>` from your
+command line to get the resulting CSS file.
