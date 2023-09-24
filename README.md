@@ -71,39 +71,25 @@ This project includes a Express server to help you preview the themes. Just foll
 4.  Open http://localhost:8080 to start previewing!
 
 
-## Adding or modifying themes.
+## Adding or modifying themes
 
 Use this import stack as a template to create your own theme:
 
 ```scss
-@import "node_modules/bootstrap/scss/mixins/banner";
-@include bsBanner("");
-
-
-// Import Bootstrap functions first
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc).
 @import "node_modules/bootstrap/scss/functions";
 
-// Configuration
-@import "<your-customizations-here>";
+// 2. Include any default variable overrides here.
 
-// Import the rest of Bootstrap
-@import "node_modules/bootstrap-daikoderu-themes/common/bootstrap-components";
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets).
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/variables-dark";
 
-// Override some styles (optional)
-@import "node_modules/bootstrap-daikoderu-themes/common/overrides";
+// 4. Include any default map overrides here.
+
+// 5. Include remainder of required parts.
+@import "node_modules/bootstrap/scss/maps";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "../../common/colorpreview"
 ```
-
-The included themes share values for different colors, and then include theme-specific
-stylesheets. For example:
-
-```scss
-@import "common/basic-colors";
-@import "colors/green-dark";
-```
-
-This way you can create theme families with both common and distinct properties 
-while reducing repetition when declaring your variables across variations.
-However, it's up to you how you organize your styles.
-
-Once you've made changes, just call `npm run css-build <theme-name>` from your
-command line to get the resulting CSS file.
