@@ -9,11 +9,12 @@ html
     title= htmlTitle
 
     block link
-      link(rel="stylesheet" href=`/css/themes/default/bootstrap.min.css`)
-      link(rel="stylesheet" href="/css/previewer/layout.css")
+      link(rel="stylesheet" href=`/static/css/themes/default/bootstrap.min.css`)
+      link(rel="stylesheet" href="/static/css/layout.css")
 
     block style
     block headscript
+      script(src="/static/js/color-mode-toggler.js")
 
   body
     include functions.pug

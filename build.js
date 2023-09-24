@@ -26,10 +26,10 @@ console.log(`Transpiling themes: ${themes}`)
 for (let theme of themes) {
   // Transpile theme files.
   const source = `./scss/themes/${theme}/bootstrap.scss`;
-  fs.writeFileSync(`./css/themes/${theme}/bootstrap.css`, sass.compile(source, options).css);
-  fs.writeFileSync(`./css/themes/${theme}/bootstrap.min.css`, sass.compile(source, optionsCompressed).css);
+  fs.writeFileSync(`./css/${theme}/bootstrap.css`, sass.compile(source, options).css);
+  fs.writeFileSync(`./css/${theme}/bootstrap.min.css`, sass.compile(source, optionsCompressed).css);
 
   // Transpile color previews.
   const colorPreviews = `./scss/themes/${theme}/colorpreview.scss`;
-  fs.writeFileSync(`./css/themes/${theme}/colorpreview.min.css`, sass.compile(colorPreviews, optionsCompressed).css);
+  fs.writeFileSync(`./css/${theme}/colorpreview.min.css`, sass.compile(colorPreviews, optionsCompressed).css);
 }

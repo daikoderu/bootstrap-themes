@@ -51,13 +51,7 @@ npm install bootstrap-daikoderu-themes@^0.2.0
 
 ### With React
 
-For `bootstrap-daikoderu-themes` versions `1.x`, add the corresponding files in your JavaScript:
-
-```js
-import 'bootstrap-daikoderu-themes/themes/<theme-name>/bootstrap.min.css';
-```
-
-For `bootstrap-daikoderu-themes` versions `0.x`, add the corresponding files in your JavaScript:
+Add the corresponding files in your JavaScript:
 
 ```js
 import 'bootstrap-daikoderu-themes/<theme-name>/bootstrap.min.css';
