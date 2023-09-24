@@ -33,59 +33,35 @@
         "typography": "Typography"
     },
     "themes": {
-        "violet-light": {
-            "name": "Violet Light",
-            "textInvertOn": ["primary", "danger", "dark"],
-            "isDark": false,
-            "useInvertOnCards": false
-        },
-        "violet-dark": {
-            "name": "Violet Dark",
-            "textInvertOn": ["secondary", "success", "warning", "danger", "info", "light"],
-            "isDark": true,
-            "useInvertOnCards": false
-        },
-        "cyan-light": {
-            "name": "Cyan Light",
-            "textInvertOn": ["info", "danger", "dark"],
-            "isDark": false,
-            "useInvertOnCards": false
-        },
-        "cyan-dark": {
-            "name": "Cyan Dark",
-            "textInvertOn": ["primary", "secondary", "success", "warning", "danger", "light"],
-            "isDark": true,
-            "useInvertOnCards": false
-        },
-        "blue-light": {
-            "name": "Blue Light",
-            "textInvertOn": ["primary", "danger", "dark"],
-            "isDark": false,
-            "useInvertOnCards": false
-        },
-        "blue-dark": {
-            "name": "Blue Dark",
-            "textInvertOn": ["secondary", "success", "warning", "danger", "info", "light"],
-            "isDark": true,
-            "useInvertOnCards": false
-        },
-        "green-light": {
-            "name": "Green Light",
-            "textInvertOn": ["secondary", "danger", "dark"],
-            "isDark": false,
-            "useInvertOnCards": false
-        },
-        "green-dark": {
-            "name": "Green Dark",
-            "textInvertOn": ["primary", "success", "warning", "danger", "info",  "light"],
-            "isDark": true,
-            "useInvertOnCards": false
-        },
         "default": {
             "name": "Bootstrap Default",
-            "textInvertOn": ["primary", "secondary", "success", "danger", "dark"],
-            "isDark": false,
+            "lightTextOn": ["primary", "secondary", "success", "danger", "dark"],
             "useInvertOnCards": true
+        },
+        "violet": {
+            "name": "Violet",
+            "lightTextOn": ["primary", "dark"],
+            "useInvertOnCards": false
+        },
+        "pink": {
+            "name": "Pink",
+            "lightTextOn": ["secondary", "dark"],
+            "useInvertOnCards": false
+        },
+        "cyan": {
+            "name": "Cyan",
+            "lightTextOn": ["info", "dark"],
+            "useInvertOnCards": false
+        },
+        "blue": {
+            "name": "Blue",
+            "lightTextOn": ["primary", "dark"],
+            "useInvertOnCards": false
+        },
+        "green": {
+            "name": "Green",
+            "lightTextOn": ["dark"],
+            "useInvertOnCards": false
         }
     }
 }

@@ -1,6 +1,12 @@
 // Document
 // =============================================================================
 
+:root {
+  --bs-border-color: var(--bs-primary-border-subtle);
+  --bs-border-color-translucent: var(--bs-primary-border-subtle);
+  --bs-tertiary-bg: var(--bs-primary-bg-subtle);
+}
+
 body {
   overflow: hidden scroll;
 }
@@ -28,185 +34,108 @@ mark, .mark {
   color: inherit;
 }
 
+hr {
+  opacity: 1;
+  color: var(--bs-primary-border-subtle);
+}
+
 
 // Alerts
 // =============================================================================
 
 .alert hr {
-  color: currentColor;
   opacity: 0.25;
-}
-
-@each $state, $color in $theme-colors {
-  .alert-#{$state} {
-    color: shift-color($color, $alert-color-scale);
-    background-color: shift-color($color, $alert-bg-scale);
-    border-color: shift-color($color, $alert-border-scale);
-    .alert-link {
-      color: shade-color(shift-color($color, $alert-color-scale), 20%);
-    }
-  }
-}
-
-
-// Buttons
-// =============================================================================
-
-@each $name, $value in $button-colors {
-  $bg: map-get($value, "bg");
-  $color: map-get($value, "color");
-  $border: map-get($value, "border");
-  .btn-#{$name} {
-    @if $name == "light" {
-      @include button-variant(
-        $bg, $bg,
-        $color: $color,
-        $hover-background: shade-color($bg, $btn-hover-bg-shade-amount),
-        $hover-border: shade-color($bg, $btn-hover-border-shade-amount),
-        $hover-color: $color,
-        $active-background: shade-color($bg, $btn-active-bg-shade-amount),
-        $active-border: shade-color($bg, $btn-active-border-shade-amount),
-        $active-color: $color,
-        $disabled-color: $color,
-      );
-    } @else if $name == "dark" {
-      @include button-variant(
-        $bg, $bg,
-        $color: $color,
-        $hover-background: tint-color($bg, $btn-hover-bg-tint-amount),
-        $hover-border: tint-color($bg, $btn-hover-border-tint-amount),
-        $hover-color: $color,
-        $active-background: tint-color($bg, $btn-active-bg-tint-amount),
-        $active-border: tint-color($bg, $btn-active-border-tint-amount),
-        $active-color: $color,
-        $disabled-color: $color,
-      );
-    } @else {
-      @include button-variant(
-        $bg, $bg,
-        $color: $color
-      );
-    }
-  }
-}
-
-@each $name, $value in $button-colors {
-  $bg: map-get($value, "background");
-  $color: map-get($value, "color");
-  $border: map-get($value, "border");
-  .btn-outline-#{$name} {
-    @include button-outline-variant(
-      $border,
-      $active-background: $bg,
-      $active-border: $bg,
-      $active-color: $color
-    );
-  }
-}
-
-
-
-// Cards
-// =============================================================================
-
-@each $variant, $colors in $card-colors {
-
-  $headerbg: map-get($colors, "headerbg");
-  $bg: map-get($colors, "bg");
-  $outline: map-get($colors, "outline");
-
-  .card.bg-#{$variant} {
-
-    border-color: $outline !important;
-    background-color: $bg !important;
-
-    .card-header,
-    .card-footer {
-      background-color: $headerbg !important;
-    }
-
-    .card-header,
-    .card-footer,
-    .list-group,
-    .list-group-item {
-      border-color: $outline !important;
-    }
-
-    .list-group-item {
-      background-color: $bg !important;
-    }
-
-  }
-
-  .card.border-#{$variant} {
-
-    .card-header,
-    .card-footer {
-      background-color: $headerbg !important;
-    }
-
-    .card-header,
-    .card-footer,
-    .list-group-item {
-      border-color: $outline !important;
-    }
-
-  }
-
-}
-
-
-// Dropdown
-// =============================================================================
-
-.dropdown-divider {
-  opacity: 1;
+  color: inherit;
 }
 
 
 // List groups
 // =============================================================================
 
-@each $state, $value in $list-group-colors {
-  $background: map-get($value, "bg");
-  $color: map-get($value, "color");
-  $border: map-get($value, "border");
-  .list-group-item-#{$state} {
-    color: $color;
-    background-color: $background;
-    border-color: $border;
-
-    &.list-group-item-action {
-      &:hover,
-      &:focus {
-        color: $color;
-        background-color: shade-color($background, 10%);
-      }
-
-      &.active {
-        color: $white;
-        background-color: $color;
-      }
-    }
-  }
+.list-group-item {
+  --bs-list-group-action-active-bg: var(--bs-primary-border-subtle);
 }
 
 
-
-// Navbar
+// Tooltips
 // =============================================================================
 
-.navbar.bg-light {
-  background-color: $navbar-light-bg !important;
+.tooltip {
+  --bs-tooltip-color: var(--bs-body-color);
+  --bs-tooltip-bg: var(--bs-primary-bg-subtle);
+}
+
+
+// Pagination
+// =============================================================================
+
+.pagination {
+  --bs-pagination-focus-bg: var(--bs-primary-border-subtle);
+  --bs-pagination-disabled-bg: var(--bs-dark-bg-subtle);
+}
+
+
+// Cards
+// =============================================================================
+
+.card {
+  --bs-card-cap-bg: var(--bs-primary-bg-subtle);
+}
+
+@each $variant in ("primary", "secondary", "success", "info", "warning", "danger") {
+
+  $base-color: var(--bs-#{$variant});
+  $bg-subtle: var(--bs-#{$variant}-bg-subtle);
+  $border-subtle: var(--bs-#{$variant}-border-subtle);
+
+  .card.bg-#{$variant} {
+    border-color: $base-color !important;
+    background-color: $bg-subtle !important;
+    .card-header,
+    .card-footer {
+      background-color: $border-subtle !important;
+    }
+    .card-header,
+    .card-footer,
+    .list-group,
+    .list-group-item {
+      border-color: $base-color !important;
+    }
+    .list-group-item {
+      background-color: $bg-subtle !important;
+    }
+  }
+
+  .card.border-#{$variant} {
+    .card-header,
+    .card-footer {
+      background-color: $bg-subtle !important;
+    }
+    .card-header,
+    .card-footer,
+    .list-group-item {
+      border-color: $base-color !important;
+    }
+  }
+
+}
+
+
+// Forms
+// =============================================================================
+
+.form-control:disabled {
+  background-color: var(--bs-dark-bg-subtle);
+}
+
+.form-range::-moz-range-track {
+  background-color: var(--bs-primary-bg-subtle);
 }
 
 
 // Tables
 // =============================================================================
 
-
-@each $variant, $colors in $card-colors {
-  .table.table-#{$variant} > :not(:first-child) {
-    border-top-color: currentColor;
-  }
+.table {
+  --bs-table-striped-bg: var(--bs-primary-bg-subtle);
 }

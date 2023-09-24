@@ -1,0 +1,13 @@
+body {
+  overflow: hidden scroll;
+}
+
+#theme-list.show {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#theme-list > li {
+  width: 100%;
+}

@@ -1,0 +1,38 @@
+-
+  function textColorForVariant(variant) {
+    return theme.lightTextOn.includes(variant) ? 'text-white' : 'text-black'
+  }
+
++tabpane("badge")
+
+  <h2>Rectangular badges</h2>
+  <p>
+    each variant in colorVariants
+      <span class="badge bg-#{variant} #{textColorForVariant(variant)}">#{variant}</span>&nbsp;
+  </p>
+  
+  <h2>Rounded badges</h2>
+  <p>
+    each variant in colorVariants
+      <span class="badge rounded-pill bg-#{variant} #{textColorForVariant(variant)}">#{variant}</span>&nbsp;
+  </p>
+
+  <h2>Badges with buttons</h2>
+
+  <button type="button" class="btn btn-primary">
+    | Notifications <span class="badge bg-danger #{textColorForVariant('danger')}">4</span>
+  </button>
+
+  <button type="button" class="btn btn-primary position-relative me-4">
+    | Inbox
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger #{textColorForVariant('danger')}">
+      | 99+ <span class="visually-hidden">unread messages</span>
+    </span>
+  </button>
+  
+  <button type="button" class="btn btn-primary position-relative">
+    | Profile
+    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger #{textColorForVariant('danger')} rounded-circle">
+      <span class="visually-hidden">New alerts</span>
+    </span>
+  </button>

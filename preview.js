@@ -4,9 +4,9 @@ const express = require('express');
 // App setup
 const app = express();
 app.set('view engine', 'pug');
-app.set('views', './views');
-app.use('/css/themes', express.static('./css'));
-app.use(express.static('./static'));
+app.set('views', './previewer/views');
+app.use('/static', express.static('./previewer/static'));
+app.use('/static/css/themes', express.static('./css'));
 
 // Theme preview configuration
 const config = require('./config.json');
@@ -27,7 +27,7 @@ app.get('/theme/:name', (req, res) => {
     themeColors: config.themeColors,
     theme: config.themes[req.params.name],
     defaultTab: "accordion",
-    colorVariants: ["primary", "secondary", "success", "danger", "warning", "info", "light", "dark"],
+    colorVariants: ["primary", "secondary", "success", "danger", "warning", "info"],
   });
 });
 

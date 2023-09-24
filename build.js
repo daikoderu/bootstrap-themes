@@ -17,19 +17,19 @@ if (params.length === 1 && params[0] === 'all') {
 const options = {
   loadPaths: ['.'],
 }
+const optionsCompressed = {
+  loadPaths: ['.'],
+  style: 'compressed',
+}
 
 console.log(`Transpiling themes: ${themes}`)
 for (let theme of themes) {
-  const source = `./scss/${theme}.scss`;
+  // Transpile theme files.
+  const source = `./scss/themes/${theme}/bootstrap.scss`;
   fs.writeFileSync(`./css/${theme}/bootstrap.css`, sass.compile(source, options).css);
-  fs.writeFileSync(`./css/${theme}/bootstrap.min.css`, sass.compile(source, {
-    ...options,
-    style: 'compressed',
-  }).css);
+  fs.writeFileSync(`./css/${theme}/bootstrap.min.css`, sass.compile(source, optionsCompressed).css);
 
-  const colorPreview = `./scss/colorpreviews/${theme}.scss`;
-  fs.writeFileSync(`./static/css/colorpreviews/${theme}.min.css`, sass.compile(colorPreview, {
-    ...options,
-    style: 'compressed',
-  }).css);
+  // Transpile color previews.
+  const colorPreviews = `./scss/themes/${theme}/colorpreview.scss`;
+  fs.writeFileSync(`./css/${theme}/colorpreview.min.css`, sass.compile(colorPreviews, optionsCompressed).css);
 }
