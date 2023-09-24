@@ -11946,6 +11946,11 @@ hr {
   --bs-list-group-action-active-bg: var(--bs-primary-border-subtle);
 }
 
+.tooltip {
+  --bs-tooltip-color: var(--bs-body-color);
+  --bs-tooltip-bg: var(--bs-primary-bg-subtle);
+}
+
 .pagination {
   --bs-pagination-focus-bg: var(--bs-primary-border-subtle);
   --bs-pagination-disabled-bg: var(--bs-dark-bg-subtle);
