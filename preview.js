@@ -5,8 +5,7 @@ const express = require('express');
 const app = express();
 app.set('view engine', 'pug');
 app.set('views', './views');
-app.use('/css/themes', express.static('./css'));
-app.use(express.static('./static'));
+app.use('/css', express.static('./css'));
 
 // Theme preview configuration
 const config = require('./config.json');

@@ -1,11 +1,10 @@
 extend basepage.pug
 
 block link
-  link(rel="shortcut icon" href="/favicon.png")
   link(rel="stylesheet" href=`/css/themes/${themeId}/bootstrap.min.css`)
-  link(rel="stylesheet" href=`/css/colorpreviews/${themeId}.min.css`)
-  link(rel="stylesheet" href="/css/layout.css")
-  link(rel="stylesheet" href="/css/preview.css")
+  link(rel="stylesheet" href=`/css/themes/${themeId}/colorpreview.min.css`)
+  link(rel="stylesheet" href="/css/previewer/layout.css")
+  link(rel="stylesheet" href="/css/previewer/preview.css")
 
 block navbar
   +navbar(false)

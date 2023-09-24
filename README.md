@@ -14,7 +14,14 @@ This project is inspired by [Bootswatch](https://bootswatch.com/).
 
 ![Preview blue-dark](previews/preview4.png)
 
-Available themes at the moment:
+Available themes at the moment for versions `1.x` (compatible with Bootstrap `>=5.3`):
+
+*   `violet`
+*   `blue`
+*   `cyan`
+*   `green`
+
+Available themes for versions `0.x` (for older `5.x` versions of Bootstrap):
 
 *   `violet-light`
 *   `violet-dark`
@@ -29,21 +36,30 @@ Available themes at the moment:
 ## Using the themes
 
 You can find my themes in the `sass` and `css` folders or install them into your Node.js
-project:
+project. Bootstrap `5.3` or later is required
 
 ```
 npm install bootstrap-daikoderu-themes
 ```
 
-The latest supported version of Bootstrap is 5.2. Due to the changes introduced in Bootstrap 5.3
-regarding variables, `bootstrap-daikoderu-themes` does not support Bootstrap 5.3 and later at
-the moment.
+If you are using Bootstrap older `5.x` versions of Bootstrap, the newer `1.x` themes will not be compatible.
+You can use instead the `0.x` version.
+
+```
+npm install bootstrap-daikoderu-themes@^0.2.0
+```
 
 ### With React
 
-Import the corresponding file in your JavaScript:
+For `bootstrap-daikoderu-themes` versions `1.x`, add the corresponding files in your JavaScript:
 
+```js
+import 'bootstrap-daikoderu-themes/themes/<theme-name>/bootstrap.min.css';
 ```
+
+For `bootstrap-daikoderu-themes` versions `0.x`, add the corresponding files in your JavaScript:
+
+```js
 import 'bootstrap-daikoderu-themes/<theme-name>/bootstrap.min.css';
 ```
 
