@@ -37,6 +37,11 @@
             "name": "Bootstrap Default",
             "lightTextOn": ["primary", "secondary", "success", "danger", "dark"],
             "useInvertOnCards": true
+        },
+        "violet": {
+            "name": "Violet",
+            "lightTextOn": ["primary", "danger", "dark"],
+            "useInvertOnCards": false
         }
     }
 }
