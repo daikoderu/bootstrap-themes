@@ -42,6 +42,26 @@
             "name": "Violet",
             "lightTextOn": ["primary", "dark"],
             "useInvertOnCards": false
+        },
+        "pink": {
+            "name": "Pink",
+            "lightTextOn": ["secondary", "dark"],
+            "useInvertOnCards": false
+        },
+        "cyan": {
+            "name": "Cyan",
+            "lightTextOn": ["info", "dark"],
+            "useInvertOnCards": false
+        },
+        "blue": {
+            "name": "Blue",
+            "lightTextOn": ["primary", "dark"],
+            "useInvertOnCards": false
+        },
+        "green": {
+            "name": "Green",
+            "lightTextOn": ["dark"],
+            "useInvertOnCards": false
         }
     }
 }

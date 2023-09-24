@@ -4,22 +4,22 @@
 // 2. Include any default variable overrides here.
 @import "../../common/basic-colors";
 
-$primary:       $purple;
+$primary:       $green;
 $secondary:     $cyan;
-$success:       $green;
+$success:       $lime;
 $danger:        $red;
 $warning:       $yellow;
 $info:          $pink;
-$body-bg-dark: #111111;
+$body-bg-dark:  #111111;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets).
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/variables-dark";
 
-// 4. Include any default map overrides here.
+// 4. Include Sass map overrides.
 
-// 5. Include remainder of required parts.
-@import "node_modules/bootstrap/scss/maps";
-@import "node_modules/bootstrap/scss/mixins";
+// 5. Include the rest of Bootstrap.
+@import "../../common/bootstrap-components";
 
-@import "../../common/colorpreview"
+// 6. Include additional overrides.
+@import "../../common/overrides";
