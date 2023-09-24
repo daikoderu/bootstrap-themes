@@ -40,7 +40,7 @@
         },
         "violet": {
             "name": "Violet",
-            "lightTextOn": ["primary", "danger", "dark"],
+            "lightTextOn": ["primary", "dark"],
             "useInvertOnCards": false
         }
     }
