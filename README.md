@@ -9,6 +9,7 @@ This project is inspired by [Bootswatch](https://bootswatch.com/).
 Available themes at the moment for versions `1.x` (compatible with Bootstrap `>=5.3`):
 
 *   `violet`
+*   `pink`
 *   `blue`
 *   `cyan`
 *   `green`
