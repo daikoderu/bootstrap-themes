@@ -6,14 +6,6 @@ by launching the Node.js project contained in this repository.
 
 This project is inspired by [Bootswatch](https://bootswatch.com/).
 
-![Preview violet-light](previews/preview1.png)
-
-![Preview cyan-light](previews/preview2.png)
-
-![Preview violet-dark](previews/preview3.png)
-
-![Preview blue-dark](previews/preview4.png)
-
 Available themes at the moment for versions `1.x` (compatible with Bootstrap `>=5.3`):
 
 *   `violet`
