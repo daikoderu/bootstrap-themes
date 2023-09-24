@@ -1,8 +1,17 @@
+-
+  function textColorForVariant(variant) {
+    if (theme.useInvertOnCards) {
+      return theme.lightTextOn.includes(variant) ? 'text-white' : 'text-black';
+    } else {
+      return '';
+    }
+  }
+
 +tabpane("card")
   <div class="row mb-3">
     <div class="col-lg-4">
       each variant in colorVariants
-        <div class="card bg-#{variant} #{cardInvertClass(variant)} mb-3">
+        <div class="card bg-#{variant} #{textColorForVariant(variant)} mb-3">
           <div class="card-header">Header</div>
           <div class="card-body">
             <h4 class="card-title">#{variant} card title</h4>

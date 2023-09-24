@@ -1,3 +1,8 @@
+-
+  function themeNameForVariant(variant) {
+    return theme.lightTextOn.includes(variant) ? 'dark' : 'light'
+  }
+
 +tabpane("nav-tab")
 
   <h2>Navs & Tabs</h2>
@@ -147,7 +152,7 @@
   <h2>Navbars</h2>
 
   each variant in colorVariants
-    <nav class="navbar navbar-expand-lg #{navbarScheme(variant)} bg-#{variant} mb-3 px-3">
+    <nav class="navbar navbar-expand-lg bg-#{variant} mb-3 px-3" data-bs-theme="#{themeNameForVariant(variant)}">
       +navbar-content(variant)
     </nav>
 

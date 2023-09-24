@@ -27,7 +27,7 @@ app.get('/theme/:name', (req, res) => {
     themeColors: config.themeColors,
     theme: config.themes[req.params.name],
     defaultTab: "accordion",
-    colorVariants: ["primary", "secondary", "success", "danger", "warning", "info", "light", "dark"],
+    colorVariants: ["primary", "secondary", "success", "danger", "warning", "info"],
   });
 });
 

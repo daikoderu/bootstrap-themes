@@ -35,8 +35,7 @@
     "themes": {
         "default": {
             "name": "Bootstrap Default",
-            "textInvertOn": ["primary", "secondary", "success", "danger", "dark"],
-            "isDark": false,
+            "lightTextOn": ["primary", "secondary", "success", "danger", "dark"],
             "useInvertOnCards": true
         }
     }
