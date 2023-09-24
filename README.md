@@ -87,9 +87,8 @@ Use this import stack as a template to create your own theme:
 
 // 4. Include any default map overrides here.
 
-// 5. Include remainder of required parts.
-@import "node_modules/bootstrap/scss/maps";
-@import "node_modules/bootstrap/scss/mixins";
-
-@import "../../common/colorpreview"
+// 5. Include the rest of Bootstrap.
+@import "node_modules/bootstrap-daikoderu-themes/scss/common/bootstrap-components"
 ```
+
+In order for this setup to work, you'll need to tell Sass to include the `node_modules` folder's parent directory as a load path.
