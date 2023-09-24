@@ -11937,6 +11937,11 @@ hr {
   color: var(--bs-primary-border-subtle);
 }
 
+.alert hr {
+  opacity: 0.25;
+  color: inherit;
+}
+
 .list-group-item {
   --bs-list-group-action-active-bg: var(--bs-primary-border-subtle);
 }
