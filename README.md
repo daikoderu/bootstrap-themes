@@ -9,10 +9,35 @@ This project is inspired by [Bootswatch](https://bootswatch.com/).
 Available themes at the moment for versions `1.x` (compatible with Bootstrap `>=5.3`):
 
 *   `violet`
+
+    ![](screenshots/violet-light.png)
+
+    ![](screenshots/violet-dark.png)
+
 *   `pink`
+
+    ![](screenshots/pink-light.png)
+
+    ![](screenshots/pink-dark.png)
+
 *   `blue`
+
+    ![](screenshots/blue-light.png)
+
+    ![](screenshots/blue-dark.png)
+
 *   `cyan`
+
+    ![](screenshots/cyan-light.png)
+
+    ![](screenshots/cyan-dark.png)
+
 *   `green`
+
+    ![](screenshots/green-light.png)
+
+    ![](screenshots/green-dark.png)
+
 
 Available themes for versions `0.x` (for older `5.x` versions of Bootstrap):
 
